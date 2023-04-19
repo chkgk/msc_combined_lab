@@ -1,0 +1,185 @@
+{{ extends "global/Page.html" }}
+{{ load staticfiles otree }}
+{{ load otree otree_tools }}
+
+
+{# ****************************************************************************************************************** #}
+{# *** STYLES *** #}
+{# ****************************************************************************************************************** #}
+{{ block styles }}
+    <link href="{{ static 'banks_two_assets/css/styles.css' }}" rel="stylesheet">
+{{ endblock }}
+
+
+{# ****************************************************************************************************************** #}
+{# *** TITLE *** #}
+{# ****************************************************************************************************************** #}
+{{ block title }}
+    Aufgabe
+{{ endblock }}
+
+
+{# ****************************************************************************************************************** #}
+{# *** CONTENT *** #}
+{# ****************************************************************************************************************** #}
+{{ block content }}
+
+    <div class="wrapper">
+        
+
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+        <!-- Progress Bar -->
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+        <label>
+            Entscheidung {{ page }} von {{ total }}
+        </label>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: {{ progress }}%;">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+        <div class="progress-vspace"></div>
+
+
+
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+        <!-- Allocation Decision Task -->
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+        <div class="card">
+
+            
+            <!-- Allocation -->
+            <!-- ---------- -->
+            <div class="card-body">
+                <div class="question">
+                    <b>
+                        
+                            Rendite pro 1 investierten ECU ...
+                        
+                    </b>
+                </div>
+                <div style="width: 400px; margin: 0 auto; text-align: center;">
+                    <table class="table t2">
+                        <tr>
+                            <td class="asset"></td>
+                            <td class="asset" style="color: rgb(0, 123, 255); font-weight: 500;">Anlage A</td>
+                            <td class="asset" style="color: rgb(40, 167, 69); font-weight: 500;">Anlage B</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Kopf: <br/>
+                                Zahl:
+                            </td>
+                            <td class="asset">
+                                {{ a_h|c }}<br/>
+                                {{ a_t|c }}
+                            </td>
+                            <td class="asset">
+                                {{ b_h|c }}<br/>
+                                {{ b_t|c }}
+                            </td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" id="container">
+                                <div id="container"></div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <div class="question">
+                        <b>
+                            
+                                Wie viel wollen Sie in die einzelnen Vermögenswerte investieren?
+                            
+                        </b>
+                        <br/>
+                        <small><i>
+                            
+                                (Hinweis: Die Schaltfläche "Weiter" wird angezeigt, wenn die Summe 100 ECU beträgt).
+                            
+                        </i></small>
+                    </div>
+                    <table class="t2">
+                        <tr>
+                            <td>
+                                <i>Investment:</i>
+                                <br/>&nbsp;
+                            </td>
+                            <td class="asset">
+                                <div class="input-group">
+                                    <input
+                                            type="number"
+                                            onchange="setTwoNumberDecimal(this)"
+                                            onkeypress="findTotal(); return no_enter()"
+                                            class="form-control text-center inv"
+                                            name="asset_a" id="asset_a"
+                                            min="0" max="100" value="0">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">ECU</span>
+                                    </div>
+                                </div>
+                                <label for="asset_a">Anlage A</label>
+                            </td>
+                            <td class="asset">
+                                <div class="input-group">
+                                    <input
+                                            type="number"
+                                            onchange="setTwoNumberDecimal(this)"
+                                            onkeypress="findTotal(); return no_enter()"
+                                            class="form-control text-center inv"
+                                            name="asset_b" id="asset_b"
+                                            min="0" max="100" value="0">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">ECU</span>
+                                    </div>
+                                </div>
+                                <label for="asset_b">Anlage B</label>
+                            </td>
+                            <td class="asset">
+                                <div class="input-group">
+                                    <input
+                                            type="text"
+                                            class="form-control text-center"
+                                            name="total" id="total"
+                                            disabled>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">ECU</span>
+                                    </div>
+                                </div>
+                                <label for="total">Summe</label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <button type="submit" class="button btn btn-primary" id="btn-next">
+                        Weiter
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{{ endblock }}
+
+
+{# ****************************************************************************************************************** #}
+{# *** SCRIPTS *** #}
+{# ****************************************************************************************************************** #}
+{{ block scripts }}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <script type="text/javascript">
+        // var n = 0;
+        // var asset_a = "{{ form.asset_a.id }}";
+        // var asset_b = "{{ form.asset_b.id }}";
+        var y_title = "{{ y_title }}";
+    </script>
+    <script src="{{ static "banks_two_assets/js/highcharts.js" }}"></script>
+    <script src="{{ static "banks_two_assets/js/functions.js" }}"></script>
+{{ endblock }}

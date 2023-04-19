@@ -1,0 +1,121 @@
+date,price,news,risk
+30.08.19,10,,Niedrig
+02.09.19,10.0409177,,Niedrig
+03.09.19,9.87691265,,Niedrig
+04.09.19,9.98147635,,Niedrig
+05.09.19,10.2676208,,Niedrig
+06.09.19,10.187671,,Niedrig
+09.09.19,10.3469455,,Niedrig
+10.09.19,10.3558628,,Niedrig
+11.09.19,10.3409943,,Niedrig
+12.09.19,10.2607625,,Niedrig
+13.09.19,10.4709209,,Niedrig
+16.09.19,11.0121078,,Niedrig
+17.09.19,10.6749243,,Niedrig
+18.09.19,10.8921948,,Niedrig
+19.09.19,11.1055581,,Niedrig
+20.09.19,11.256361,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+23.09.19,10.6397863,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+24.09.19,10.4229858,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+25.09.19,10.1935162,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+26.09.19,10.3231822,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+27.09.19,10.3350446,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+30.09.19,10.4567031,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+01.10.19,10.4029795,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+02.10.19,9.79270315,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+04.10.19,9.69743216,"Die Wahrscheinlichkeit, dass eine Aktie am nächsten Tag fällt oder steigt liegt jeweils bei 50%.",Niedrig
+07.10.19,9.8985343,,Niedrig
+08.10.19,9.66053992,,Niedrig
+09.10.19,9.84116435,,Niedrig
+10.10.19,9.9540151,,Niedrig
+11.10.19,10.0966103,,Niedrig
+14.10.19,9.99989382,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+15.10.19,10.1719789,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+16.10.19,10.1337384,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+17.10.19,10.0397851,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+18.10.19,10.0953101,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+21.10.19,10.2183879,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+22.10.19,10.3893823,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+23.10.19,10.5707134,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+24.10.19,10.5707134,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+25.10.19,10.4687692,"Langfristig steigt der Aktienwert deutlich stärker als der Wert von Bargeld.",Niedrig
+28.10.19,10.3434483,,Niedrig
+29.10.19,10.3434483,,Niedrig
+30.10.19,9.96085195,,Niedrig
+31.10.19,9.79207327,,Niedrig
+01.11.19,9.9767205,,Niedrig
+04.11.19,10.3873211,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+05.11.19,10.6428079,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+06.11.19,10.6428079,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+07.11.19,10.6608491,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+08.11.19,10.6518208,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+11.11.19,10.6097069,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+12.11.19,10.8258639,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+13.11.19,10.6712087,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+14.11.19,10.4032619,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+15.11.19,10.6975256,"Glauben Sie, dass Sie besser investieren als andere Investoren?",Niedrig
+18.11.19,10.513683,,Niedrig
+19.11.19,10.2119263,,Niedrig
+20.11.19,10.3856336,,Niedrig
+21.11.19,10.4093857,,Niedrig
+22.11.19,10.3915513,,Niedrig
+25.11.19,10.4271896,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+26.11.19,10.3022418,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+27.11.19,10.2253594,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+28.11.19,10.0279814,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+29.11.19,10.0046436,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+02.12.19,9.79484764,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+03.12.19,9.62763611,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+04.12.19,9.88772662,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+05.12.19,9.80083974,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+06.12.19,10.0430494,"Seien Sie achtsam! Der Zeitpunkt einer Investition ist entscheidend.",Niedrig
+09.12.19,9.85041896,,Niedrig
+10.12.19,9.84752858,,Niedrig
+11.12.19,9.80128927,,Niedrig
+12.12.19,9.86760186,,Niedrig
+13.12.19,9.80974433,,Niedrig
+16.12.19,9.84724115,"Weiter so - bald geschafft!",Niedrig
+17.12.19,9.99751452,"Weiter so - bald geschafft!",Niedrig
+18.12.19,10.12272,"Weiter so - bald geschafft!",Niedrig
+19.12.19,10.0699823,"Weiter so - bald geschafft!",Niedrig
+20.12.19,10.3037602,"Weiter so - bald geschafft!",Niedrig
+23.12.19,10.4042558,"Weiter so - bald geschafft!",Niedrig
+27.12.19,10.4012857,"Weiter so - bald geschafft!",Niedrig
+30.12.19,10.3032864,"Weiter so - bald geschafft!",Niedrig
+02.01.20,10.4599342,"Weiter so - bald geschafft!",Niedrig
+03.01.20,10.5879847,"Weiter so - bald geschafft!",Niedrig
+06.01.20,10.9265365,,Niedrig
+07.01.20,10.8717593,,Niedrig
+08.01.20,10.7078405,,Niedrig
+09.01.20,10.6475911,,Niedrig
+10.01.20,10.536444,,Niedrig
+13.01.20,10.42588,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+14.01.20,10.1791664,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+15.01.20,10.0910605,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+16.01.20,10.2051003,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+17.01.20,10.2668514,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+20.01.20,10.1813189,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+21.01.20,9.92873172,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+22.01.20,9.74022067,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+23.01.20,9.79192341,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+24.01.20,9.59608494,"Ist 'sicheres' Bargeld vernünftiger als 'riskante' Investments in Aktien?",Niedrig
+27.01.20,9.22261877,,Niedrig
+28.01.20,9.54396437,,Niedrig
+29.01.20,9.33080257,,Niedrig
+30.01.20,8.8221818,,Niedrig
+31.01.20,8.42067693,,Niedrig
+03.02.20,8.468696,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+04.02.20,8.70144803,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+05.02.20,8.98887511,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+06.02.20,8.96407441,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+07.02.20,8.79896483,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+10.02.20,8.62993746,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+11.02.20,8.78652635,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+12.02.20,9.12158843,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+13.02.20,8.89958445,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+14.02.20,8.77898645,"Nur noch die letzten Runden konzentriert bleiben. Es ist noch nicht vorbei.️",Niedrig
+17.02.20,8.94503859,,Niedrig
+18.02.20,8.80215977,,Niedrig
+19.02.20,8.91390727,,Niedrig
+20.02.20,8.84533875,,Niedrig
+21.02.20,8.60217732,,Niedrig

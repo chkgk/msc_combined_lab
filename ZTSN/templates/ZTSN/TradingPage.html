@@ -1,0 +1,152 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<!-- Write content in here -->
+
+<div class="container-fluid" >
+    <div class="row" >
+
+        <!-- left side -->
+        <div class="col-lg-8">
+
+            <!-- Market chart -->
+            <div class="container">
+            <h2>Markt</h2>
+            <figure class="highcharts-figure">
+            <div id="container"></div>
+            </figure>
+            </div>
+
+            <!-- Portfolio table -->
+            <div class="container">
+            <h2>Portfolio</h2>
+            <table class="table table-striped text-center" style="background-color:rgb(240,240,240)" class="col-lg-4">
+                <thead>
+                <tr>
+                    <th>Bargeld</th>
+                    <th>Aktien</th>
+                    <th>Aktienwert</th>
+                    <th>Gesamt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color:rgb(240,240,240)" >
+                    <td id="table_cash"></td>
+                    <td id="table_shares"></td>
+                    <td id="table_share_value"></td>
+                    <td id="table_total"></td>
+                    <td style="display:none;" id="table_pandl"></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+        </div>
+
+        <!-- right side -->
+        <div style="background-color:rgb(240,240,240)" class="col-lg-4">
+
+            <div class="container text-center">
+            <table class="table table-striped text-center" >
+                <thead>
+                  <tr>
+                    <th><h3>Preis</h3></th>
+                    <th><h3>Risiko</h3></th>
+                  </tr>
+                </thead>
+            <tbody>
+                <tr style="background-color:rgb(240,240,240)" >
+                    <td id="trade_price"></td>
+                    <td id="trade_risk"></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+
+            <!-- Trade buttons -->
+            <div class="container-fluid text-center">
+                <h3>Handel</h3>
+                <div class="row">
+                    <div class="col-sm d-flex justify-content-center">
+                    <button onclick="buy_shares(this.value)" value="1" id="trade_btn_buy_s" type="button" class="btn btn-success btn-block" style="font-size: 20px; width: 140px;">1x kaufen</button>
+                    </div>
+                    <div class="col-sm d-flex justify-content-center">
+                    <button onclick="buy_shares(this.value)" value="5" id="trade_btn_buy_l" type="button" class="btn btn-success btn-block" style="font-size: 20px; width: 140px;">5x kaufen</button>
+                    </div>
+                </div><p>
+
+                <div class="row">
+                    <div class="col-sm d-flex justify-content-center">
+                    <button onclick="sell_shares(this.value)" value="1" id="trade_btn_sell_s" type="button" class="btn btn-danger btn-block" style="font-size: 20px; width: 140px;">1x verkaufen</button>
+                    </div>
+                    <div class="col-sm d-flex justify-content-center">
+                    <button onclick="sell_shares(this.value)" value="5" id="trade_btn_sell_l" type="button" class="btn btn-danger btn-block" style="font-size: 20px; width: 140px;">5x verkaufen</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt-4">
+                <div class="jumbotron left col-sm" style=background-color:rgb(211,211,211);height:280px id="trade_news"</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% next_button %}
+
+{% endblock %}
+
+{% block scripts %}
+<!-- Write scripts in here! -->
+
+<!-- Load javascripts from Content Delivery Network -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+
+<!-- Make sure a warning apears when someone tries to refresh or leave the session-->
+<body onkeydown="return (event.keyCode != 116)"></body>
+<body onkeydown="return (event.keyCode != 8)"></body>
+<body onkeydown="return (event.keyCode != 123)"></body>
+<body onkeydown="return (event.keyCode != 154)"></body>
+
+<!-- Load custom javascripts from static files -->
+<script src="{% static "ZTSN/chart.js" %}?v=Mar 19 08:30"></script>
+<script src="{% static "ZTSN/trade_controller.js" %}?v=Apr 18 23:07"></script>
+{% endblock %}
+
+{% block styles %}
+<!-- Add custom CSS rules to override default toastr styles -->
+<style>
+.toast {
+    left: 10%;
+    transform: translate(-50%, 50%);
+    max-width: 1000px;
+}
+
+.toast-warning, .toast-success, .toast-error {
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+    width: 600px !important;
+}
+
+#trade_news {
+    font-size: 20px;
+    height: 100%;
+}
+</style>
+{% endblock %}

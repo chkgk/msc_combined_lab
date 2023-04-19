@@ -1,0 +1,40 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Ergebnisse der Runde {{subsession.round_number}}/{{session.num_rounds}}
+{% endblock %}
+
+{% block content %}
+
+<!-- Portfolio table -->
+<div class="container">
+    <table class="table table-striped text-center">
+        <thead>
+        <tr>
+            <th>Bargeld</th>
+            <th>Aktien</th>
+            <th>Aktienwert</th>
+            <th>Gesamt</th>
+            <th>GuV</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{cash}}</td>
+            <td>{{shares}}</td>
+            <td>{{share_value}}</td>
+            <td>{{portfolio_value}}</td>
+            <td>{{pandl}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+    <button name="btn_submit" value="True" class="btn btn-primary">
+        <span style="font-size:16px;">Weiter</span>
+    </button>
+
+{% endblock %}
+
+

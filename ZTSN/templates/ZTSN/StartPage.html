@@ -1,0 +1,30 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    {% if is_training_round  %} Übungsrunde: {% endif %} Marktsimulation
+{% endblock %}
+
+{% block content %}
+    <div style="text-align: justify;">
+    <p>Klicken Sie auf "Weiter" um mit Runde {{subsession.round_number}}/{{session.num_rounds}} des Experiments fortzuführen,
+    wenn auch immer Sie bereit sind!</p>
+
+    {% if is_training_round  %} <p style="color:salmon;"><b>Das ist eine Übungsrunde! Nachdem Sie auf "Weiter" gedrückt haben, können
+    Sie sich in der Übungsrunde mit der Darstellung und den Funktionen vertraut machen um das Experiment besser zu verstehen.
+    Zur Erinnerung: Diese Runde ist nicht relevant für die Auszahlung!</b></p>
+    {% endif %}
+   <br>
+    </div>
+
+    <button name="btn_submit" value="True" class="btn btn-primary">
+        <span style="font-size:16px;">Weiter</span>
+    </button>
+
+{% endblock %}
+
+{% block scripts %}
+<!-- Write scripts in here! -->
+<!-- Load custom javascripts from static files -->
+<script src="{% static "ZTSN/start_controller.js" %}"></script>
+{% endblock %}

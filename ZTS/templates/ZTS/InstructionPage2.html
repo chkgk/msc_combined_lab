@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Marktsimulation: Anmerkungen
+{% endblock %}
+
+{% block content %}
+
+
+<p style="margin-left: 20px;"><b><em>1. Markt:</em></b>
+        <br>
+        Die y-Achse des Preisdiagramms passt sich automatisch an den aktuellen Marktpreis an. Diese Änderungen spiegeln
+        nur den aktuellen Preis wider und sind nicht aussagekräftig für zukünftige Preisänderungen. Der Marktpreis wird
+        in ECUs angegeben. Auf der x-Achse werden die Markttage angezeigt, wobei ein Tag in der Simulation 1,4 Sekunden
+        lang dauert.
+        <br>
+        <br>
+        <b><em>2. Portfolio:</em></b>
+        <br>
+        Hier sehen Sie alle zur gegebenen Zeit und in Ihrem Besitz befindenden Vermögenswerte: Bargeld, Aktie (Anteile an
+        dem riskanten Vermögenswert, Aktienwert (Wert der gehaltenen Anteile) und Gesamt (Summe aus Bargeld und dem Aktienwert).
+        <br>
+        <br>
+        <b><em>3. Rechte Box:</em></b>
+        <br>
+        Hier sehen Sie den aktuellen Marktpreis der Aktie, die Schaltflächen für den Kauf und Verkauf von Aktien sowie
+        Informationen bezüglich Investitionen im Allgemeinen oder bezogen auf die Aktie.
+        <br>
+        <br>
+    </p>
+
+    <img src="{% static "images/interfacegamified.png" %}" alt="Trading Interface" width=100%>
+        <br>
+        <br>
+    </div>
+    <!--p><i>To change this page's content adjust the html of the /ZTS/InstructionPage.html file.</i></p-->
+
+{{ next_button }}
+
+
+{% endblock %}

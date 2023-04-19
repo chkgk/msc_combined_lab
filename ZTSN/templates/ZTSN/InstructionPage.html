@@ -1,0 +1,58 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Marktsimulation: Anleitung
+{% endblock %}
+
+{% block content %}
+
+       <div style="text-align: justify;">
+      
+    <b><em>Überblick:</em></b>
+    <p>
+        Die folgende Marktsimulation wird mithilfe einer browserbasierten Handelsoberfläche dargestellt.
+        Die Aufgabe besteht aus 3 Runden: <em>1 Übungsrunde</em> und <em>2 Testrunden</em>. Sobald alle Runden absolviert wurden,
+        werden Sie eine Auszahlung in Abhängigkeit von Ihren Ergebnissen bekommen, wobei nur eine der beiden Testrunden
+        zufällig ausgewählt wird.
+        <br>
+        <br>
+
+
+    <b><em>Regeln Marktsimulation:</em></b>
+        <br>
+        Zu Beginn jeder Runde erhalten Sie ein Portfolio, bestehend aus einem <em>sicheren Vermögenswert (Bargeld)</em>
+        im Wert von 120 ECUs, wobei Sie hiervon 80 ECUs am Ende wieder abgeben müssen, und 0 Anteile von einem <em>riskanten Vermögenswert (Aktie)</em>.
+        In jeder Runde können Sie Aktien kaufen und verkaufen indem Sie auf die <em>"Kaufen" oder "Verkaufen" Schaltflächen</em>
+        klicken. Das können Sie so oft machen wie Sie glauben, dass es für Sie gewinnbringend sein wird. Behalten Sie aber
+        stets in Erinnerung, dass Sie eine <em>Gebühr in Höhe von 1,25%</em> (in Relation zum aktuellen Aktienpreis) für jeden Kauf
+        und Verkauf zahlen. Sie können immer nur 1 Aktie oder 5 Aktien kaufen und 1 Aktie oder 5 Aktien verkaufen. Besitzen
+        Sie nur 3 Aktien, können Sie mit der "5x verkaufen" Schaltfläche ihre maximale Zahl an Aktien verkaufen.
+        Nehmen Sie nun beispielsweise an, dass Sie eine Aktie halten und diese für einen Marktpreis
+        von 100 ECUs verkaufen, dann werden Ihnen nur 98,75 ECUs auf Ihr Bargeldkonto gutgeschrieben. Sind Sie sich außerdem
+        bewusst, dass der Handel für Sie <em>für 2 Sekunden ausgesetzt wird</em>, wenn Sie eine Aktie verkaufen wollen,
+        aber keine besitzen oder wenn Sie eine Aktie kaufen wollen und nicht genug Bargeld für den Marktpreis und zusätzlich
+        für die Kaufgebühr in Höhe von 1,25% haben. Jeder Handel, Kauf oder Verkauf, wird unverzüglich zum aktuellen
+        Marktpreis durchgeführt. Die Marktpreise basieren auf <em>historischen Kursen von realen Aktien</em>. <em>Aktien
+        sind durch eine höhere Volatilität gekennzeichnet</em> als Bargeld. Leerverkäufe sind nicht möglich.
+
+        <br>
+        <br>
+
+    <b><em>Auszahlung:</em></b>
+        <br>
+        Sie erhalten eine leistungsabhängige Auszahlung aus einer zufällig ausgewählten Runde der beiden Testrunden. 
+        Die Auszahlung entspricht dem Gesamtwert des Portfolios am Ende der Runde (nach Rückzahlung der 80 ECUs).
+        Verluste werden nicht von Ihrer fixen Vergütung abgezogen werden.
+
+        <br>
+        <br>
+        Auf der nächsten Seite sehen Sie eine Abbildung der Handelsplattform mit kurzen Beschreibungen. Wenn Sie bereit sind, klicken Sie
+        auf "Weiter".
+        <br>
+
+    </div>
+
+{{ next_button }}
+
+{% endblock %}

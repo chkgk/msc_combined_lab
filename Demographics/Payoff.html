@@ -1,0 +1,24 @@
+{{ block title }}
+    Ende
+{{ endblock }}
+{{ block content }}
+<p>Vielen Dank für die Teilnahme an dieser Studie. <br>
+    Bitte bleiben Sie noch einen Augenblick an Ihrem Platz sitzen. Wir werden Sie einzeln zur Auszahlung aufrufen. </p>
+
+<p>Für Ihre Auszahlung wurde Experiment {{ pay_exp }} per Zufall ausgewählt.</p>
+{{ if pay_exp == 1 }}
+    <p>
+        In diesem Experiment wurde Runde {{ exp1_pay_round}} zufällig ausgewählt.<br>
+        Sie haben in dieser Runde {{ exp1_pay_ecu }} verdient. Dies entspricht {{ exp1_pay_eur }} €.
+    </p>
+{{ else }}
+    <p>
+        In diesem Experiment wurde die Investitionsaufgabe mit {{ exp2_task }} Anlagemöglichkeiten zufällig ausgewählt.<br>
+        Es wurde Investition {{ banks_round }} ausgewählt und es ist "{{ banks_coinflip }}" gefallen.<br>
+        Sie haben in dieser Aufgabe {{ exp2_pay_ecu }} verdient. Dies entspricht {{ exp2_pay_eur }} €.
+    </p>
+{{ endif }}
+        
+<p>Zusammen mit der fixen Auszahlung erhalten Sie daher <b>{{ rounded_payoff }} €</b>. Es wurde auf die nächsten 20ct. aufgerundet. Tragen Sie diesen Betrag auf Ihrer Quittung ein.</p>
+
+{{ endblock }}

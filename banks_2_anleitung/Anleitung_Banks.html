@@ -1,0 +1,21 @@
+{{ block title }}
+    Teil 2: Anleitung
+{{ endblock }}
+
+{{ block content }}
+
+<p style="text-align: justify;">Im Folgenden werden Ihnen 25 Investitionsmöglichkeiten vorgestellt. 
+Für jede der 25 Investitionsentscheidungen haben Sie einen verfügbaren Betrag von ECU 100 zu investieren. Bei jeder der ersten 10 Investitionsentscheidungen haben Sie zwei Investitionsmöglichkeiten: <em>Anlage A</em> und <em>Anlage B</em>. Die Rendite Ihrer Anlage hängt vom Wurf einer Münze ab, was vom Computer zufällig generiert wird. </p>
+<p> Um dies zu verdeutlichen folgt eine Darstellung einer Investmentsituation: </p>
+
+<img src="{{ static 'banks_two_assets/img/twoasset.png' }}" style="width: 500px; height: auto;"/>
+
+<p style="text-align: justify;">Wie Sie sehen können wird im oberen Abteil bei jeder Anlagemöglichkeit die Rendite für jeden investierten ECU angezeigt. Im illustrierten Beispiel zahlt <em>Anlage A</em> bei Kopf ECU 4,80 und bei Zahl ECU 0,00 für jeden investierten ECU. <em>Anlage B</em> zahlt bei Kopf ECU 0,00 und bei Zahl ECU 1,20 aus. Sie können den Betrag wählen, den Sie in jeden Vermögenswert investieren möchten, indem Sie den entsprechenden Betrag in das Feld unten eingeben. Beachten Sie, dass Sie genau den Betrag Ihrer Anfangsausstattung investieren müssen.  </p>
+<p style="text-align: justify;">Nehmen wir nun an, Sie investieren ECU 65 in <em>Anlage A</em> und ECU 35 in <em>Anlage B</em>. Anhand des gezeigten Beispiels würde Ihre Auszahlung wie folgt ausschauen:</p>
+<p>Auszahlung bei <strong>Kopf</strong>: (65 * 4,80) + (35 * 0,00) = 312 ECU <br>
+Auszahlung bei <strong>Zahl</strong>: (65 * 0,00) + (35 * 1,20) = 42 ECU</p>
+<p style="text-align: justify;">Wenn Sie mit einer Anlageentscheidung fertig sind, klicken Sie auf die Schaltfläche "Weiter", um zur nächsten Anlageentscheidung zu gelangen. Nachdem Sie die ersten 10 Entscheidungen getroffen haben, wird sich die Aufgabe ein wenig ändern. Anstelle von nur zwei Vermögenswerten werden Ihnen dann 15 Anlagemöglichkeiten mit jeweils fünf Vermögenswerten präsentiert, in die Sie investieren können. </p>
+    {{ next_button }}
+{{ endblock }}
+
+

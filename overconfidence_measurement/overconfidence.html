@@ -1,0 +1,24 @@
+
+{{ block title }}
+    Teil 1: Schätzaufgabe
+{{ endblock }}
+{{ block content }}
+
+<p> Es folgen 10 Schätzfragen. Bitte geben Sie jeweils eine Ober- und eine Untergrenze an, so dass Sie sich zu 90% sicher sind, dass der gesuchte Wert innerhalb der Grenzen liegt. </p>
+
+<p>Die richtige Antwort sollte: <br>
+
+... mit niedriger Wahrscheinlichkeit (5%) unterhalb der Untergrenze liegen. Das heißt, mit 95%iger Wahrscheinlichkeit sollte die richtige Antwort über Ihrer Untergrenze liegen.<br>
+
+... mit niedriger Wahrscheinlichkeit (5%) die Obergrenze überschreiten. Das heißt, mit 95%iger Wahrscheinlichkeit sollte die richtige Antwort unterhalb Ihrer Obergrenze liegen. </p>
+
+<p>Beispiel: <br>
+    In welchem Jahr wurde Alfred Nobel geboren? Untere Grenze: ____ Obere Grenze: ____</p>
+
+<p>Angenommen, Ihre Schätzung für die untere Grenze lautet 1815 und für die obere Grenze 1860. Mit dieser Antwort geben Sie an, dass es eine 5%ige Chance gibt, dass Alfred Nobel vor 1815 geboren wurde, und eine 5%ige Chance, dass er nach 1860 geboren wurde. Das bedeutet, dass Sie zu 90 % sicher sind, dass er zwischen 1815 und 1860 geboren wurde.</p>
+
+
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

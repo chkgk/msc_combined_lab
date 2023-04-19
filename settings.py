@@ -63,11 +63,6 @@ SESSION_CONFIGS = [
         random_round_payoff=True,
         training_round=True,
         graph_buffer=5,
-    ),
-    dict(
-        name='Demographics',
-        app_sequence=['Demographics'],
-        num_demo_participants=2,
     )
 ]
 

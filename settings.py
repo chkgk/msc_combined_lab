@@ -31,7 +31,7 @@ SESSION_CONFIGS = [
         trading_button_values='[1, 1, 1]',
         random_round_payoff=True,
         training_round=True,
-        graph_buffer=5,
+        graph_buffer=1,
     ),
     dict(
         name='combined_experiment_gamified',
@@ -62,7 +62,7 @@ SESSION_CONFIGS = [
         trading_button_values='[1, 1, 1]',
         random_round_payoff=True,
         training_round=True,
-        graph_buffer=5,
+        graph_buffer=1,
     )
 ]
 

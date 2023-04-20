@@ -177,11 +177,11 @@ class Decision(Page):
         player.tails = tails
 
         if player.participant.vars['exp_to_pay'] == 2 and player.participant.vars['exp2_task'] == 2 and round_num == player.participant.vars['banks2_round_to_pay']:
-            pay_for = random.choice(['heads', 'tails'])
+            pay_for = random.choice(['Kopf', 'Zahl'])
             player.paid_for = pay_for
             player.participant.vars["banks_coinflip"] = pay_for
             player.participant.vars["banks_round"] = round_num
-            player.payoff = player.heads if pay_for == 'heads' else player.tails
+            player.payoff = player.heads if pay_for == 'Kopf' else player.tails
             player.participant.vars["exp2_pay_ecu"] = player.payoff
 
 

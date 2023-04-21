@@ -28,6 +28,8 @@ class Player(BasePlayer):
 class Page1(Page):
     timeout_seconds = 10
 
+class WaitForAll(WaitPage):
+    wait_for_all_groups = True
+    body_text = "Bitte warten Sie, bis die anderen Teilnehmer Experiment 1 ebenfalls abgeschlossen haben."
 
-
-page_sequence = [Page1]
+page_sequence = [WaitForAll, Page1]

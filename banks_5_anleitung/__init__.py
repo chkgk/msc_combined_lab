@@ -27,6 +27,7 @@ class Player(BasePlayer):
 # PAGES
 class WaitForAll(WaitPage):
     wait_for_all_groups = True
+    body_text = "Bitte warten Sie, bis die anderen Teilnehmer ebenfalls fertig sind."
 
 class Anleitung(Page):
     pass

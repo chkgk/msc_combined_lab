@@ -75,8 +75,15 @@ SESSION_CONFIG_DEFAULTS = dict(
     real_world_currency_per_point=1.00, participation_fee=4.00, doc=""
 )
 
-PARTICIPANT_FIELDS = ['exp_to_pay', 'round_to_pay', 'exp1_pay_ecu', 'exp2_pay_ecu', 'exp2_task', 'banks5_round_to_pay', 'banks2_round_to_pay', "banks_coinflip", "banks_round"]
+PARTICIPANT_FIELDS = ['exp_to_pay', 'round_to_pay', 'exp1_pay_ecu', 'exp2_pay_ecu', 'exp2_task', 'banks5_round_to_pay', 'banks2_round_to_pay', "banks2_coinflip", "banks5_coinflip"]
 SESSION_FIELDS = ['num_rounds']
+
+ROOMS = [
+    dict(
+        name='econ_lab',
+        display_name='Experimental Economics Lab'
+    ),
+]
 
 # ISO-639 code
 # for example: de, fr, ja, ko, zh-hans

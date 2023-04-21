@@ -86,8 +86,10 @@ class Payoff(Page):
             'exp1_pay_ecu': part.vars.get('exp1_pay_ecu', 0),
             'exp1_pay_eur': round(part.vars.get('exp1_pay_ecu', 0) / 10, 2),
             'exp2_task': part.vars.get('exp2_task', 0),
-            'banks_round': part.vars.get('banks2_round_to_pay', 0),
-            'banks_coinflip': part.vars.get('banks_coinflip', None),
+            'banks2_round': part.vars.get('banks2_round_to_pay', 0),
+            'banks2_coinflip': part.vars.get('banks2_coinflip', None),
+            'banks5_round': part.vars.get('banks5_round_to_pay', 0),
+            'banks5_coinflip': part.vars.get('banks5_coinflip', None),
             'exp2_pay_ecu': part.vars.get('exp2_pay_ecu', 0),
             'exp2_pay_eur': round(part.vars.get('exp2_pay_ecu', 0) / 10, 2),
             'rounded_payoff': round_up_to_next_20_cents(part.payoff/10 + player.session.config['participation_fee'])

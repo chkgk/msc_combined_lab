@@ -152,7 +152,6 @@ class Decision(Page):
     # before next page...
     # ----------------------------------------------------------------------------------------------------------------
     def before_next_page(player: Player, timeout_happened):
-        round_num = player.subsession.round_number
         # payoffs
         # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         a_h = float(player.a_h)
@@ -176,11 +175,11 @@ class Decision(Page):
         ]) 
         player.tails = tails
 
-        if player.participant.vars['exp_to_pay'] == 2 and player.participant.vars['exp2_task'] == 2 and round_num == player.participant.vars['banks2_round_to_pay']:
+        if player.participant.vars['exp_to_pay'] == 2 and player.participant.vars['exp2_task'] == 2 and player.round_number == player.participant.vars['banks2_round_to_pay']:
             pay_for = random.choice(['Kopf', 'Zahl'])
             player.paid_for = pay_for
-            player.participant.vars["banks_coinflip"] = pay_for
-            player.participant.vars["banks_round"] = round_num
+            player.participant.vars["banks2_coinflip"] = pay_for
+            player.participant.vars["banks2_round"] = player.round_number
             player.payoff = player.heads if pay_for == 'Kopf' else player.tails
             player.participant.vars["exp2_pay_ecu"] = player.payoff
 

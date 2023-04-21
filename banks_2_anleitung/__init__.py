@@ -27,10 +27,11 @@ class Player(BasePlayer):
 # PAGES
 class WaitForAll(WaitPage):
     wait_for_all_groups = True
+    body_text = "Bitte warten Sie, bis die anderen Teilnehmer ebenfalls fertig sind."
 
 class Anleitung_Banks(Page):
     pass
 
 
 
-page_sequence = [WaitForAll, Anleitung_Banks]
+page_sequence = [Anleitung_Banks, WaitForAll]  # WaitForAll back in

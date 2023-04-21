@@ -14,7 +14,11 @@
 {{ else }}
     <p>
         In diesem Experiment wurde die Investitionsaufgabe mit {{ exp2_task }} Anlagemöglichkeiten zufällig ausgewählt.<br>
-        Es wurde Investition {{ banks_round }} ausgewählt und es ist "{{ banks_coinflip }}" gefallen.<br>
+        {{ if exp2_task == 2}}
+            Es wurde Investition {{ banks2_round }} ausgewählt und es ist "{{ banks2_coinflip }}" gefallen.<br>
+        {{ else }}
+            Es wurde Investition {{ banks5_round }} ausgewählt und es ist "{{ banks5_coinflip }}" gefallen.<br>
+        {{ endif}}
         Sie haben in dieser Aufgabe {{ exp2_pay_ecu }} verdient. Dies entspricht {{ exp2_pay_eur }} €.
     </p>
 {{ endif }}

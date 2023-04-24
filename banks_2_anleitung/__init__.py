@@ -34,4 +34,4 @@ class Anleitung_Banks(Page):
 
 
 
-page_sequence = [Anleitung_Banks, WaitForAll]  # WaitForAll back in
+page_sequence = [WaitForAll, Anleitung_Banks]  # WaitForAll back in

@@ -21,7 +21,7 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    pass
+    sitzplatz = models.IntegerField(label="Sitzplatznummer:", min=1, max=24)
 
 
 # Functions
@@ -32,7 +32,11 @@ def creating_session(subsession: Subsession):
 
 # PAGES
 class Page1(Page):
-    pass
+    form_model = 'player'
+    form_fields = ['sitzplatz']
+
+    def before_next_page(player: Player, timeout_happened):
+        player.participant.label = f"Sitzplatz {player.sitzplatz}"
 
 class Page2(Page):
     timeout_seconds = 5
